@@ -92,7 +92,7 @@ const AddPost = () => {
         />
         <CustomInput
           value={formData.title}
-          label=""
+          label="title"
           placeholder="Enter title"
           onChangeText={(val) => setFormData({ ...formData, title: val })}
         />
