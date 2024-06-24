@@ -8,6 +8,8 @@ import axios from 'axios';
 export default function HomeScreen() {
   const [posts, setPosts] = useState([]);
 
+  // Displaying  all the created post using flatList 
+
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get("https://jsonplaceholder.typicode.com/posts");

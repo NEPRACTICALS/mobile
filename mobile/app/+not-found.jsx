@@ -2,6 +2,7 @@ import CustomButton from '../components/CustomButton';
 import { Stack, useRouter } from 'expo-router';
 import { SafeAreaView, Text } from 'react-native';
 
+// not found  page which is returned when a not rendered page ir rendered 
 export default function NotFoundScreen() {
   const router = useRouter();
   return (

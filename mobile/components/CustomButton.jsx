@@ -1,6 +1,8 @@
 import React from 'react'
 import { ActivityIndicator, Text, TouchableOpacity } from 'react-native'
 
+// Predifined  Button Events
+
 const CustomButton = ({ title, handlePress, variant = "primary", containerStyles="", titleStyles="", isLoading=false }) => {
     return (
         <TouchableOpacity

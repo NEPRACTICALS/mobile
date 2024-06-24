@@ -8,6 +8,8 @@ export const validatePassword = (password) => {
     return password.length >= 4;
 }
 
+// function to validate post data
+
 export const validatePost = (post) => {
     return {
       userId: {

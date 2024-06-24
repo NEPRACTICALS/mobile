@@ -23,6 +23,8 @@ const PostView = () => {
     body: ""
   });
 
+  //getting post by id 
+
   useEffect(() => {
     console.log("Route params:", route.params); // Log route params for debugging
     if (postId) {
@@ -65,6 +67,8 @@ const PostView = () => {
       });
     }
 
+    // updating a  post using id 
+
     try {
       const response = await axios.put(
         `https://jsonplaceholder.typicode.com/posts/${postId}`,
@@ -78,6 +82,7 @@ const PostView = () => {
     }
   };
 
+  // deleting a post using id
   const handleDelete = async () => {
     try {
       await axios.delete(
@@ -90,6 +95,8 @@ const PostView = () => {
       toast.show("Error deleting post", { type: "danger" });
     }
   };
+
+  // fetching  comments of a certain post  using id 
 
   const fetchComments = async () => {
     try {

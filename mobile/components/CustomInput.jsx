@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, TextInput, View } from 'react-native';
 
+// predifined in put 
 const CustomInput = ({ label, containerStyles="", inputStyles="", ...props }) => {
     return (
         <View className={`${containerStyles}`}>
